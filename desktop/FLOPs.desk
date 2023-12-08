@@ -7,13 +7,8 @@ statusbar    -1
 radial menu set main
 root {
     split 0.612109 H {
-        split 0.658795 V R {
-            tabs 0 0 {
-                pane panetab3 -a 0 -l 10 -H /obj/geo1/ -T SOP -m sceneview
-            }
-            tabs 0 0 {
-                pane panetab2 -a 0 -l 10 -H /obj/geo1/ -T SOP -m parmeditor
-            }
+        tabs 0 0 {
+            pane panetab3 -a 0 -l 10 -H /obj/geo1/ -T SOP -m sceneview
         }
         split 0.5 V {
             tabs 0 0 {
@@ -26,7 +21,6 @@ root {
     }
 }
 shelfdock -o 0 -l icon_and_text
-parmeditor -T 0.25 -w 0 panetab2
 viewerstow -x open -b stow -l stow -m hide -c hide -d open ${DESKNAME}.panetab3.world
 vieweroption -a 2 ${DESKNAME}.panetab3.world
 viewlayout -s 2 ${DESKNAME}.panetab3.world
@@ -34,7 +28,7 @@ viewtype -t ortho_right ${DESKNAME}.panetab3.world.`vpname("${DESKNAME}.panetab3
 viewtype -t ortho_front ${DESKNAME}.panetab3.world.`vpname("${DESKNAME}.panetab3.world",3)`
 viewtype -t ortho_top ${DESKNAME}.panetab3.world.`vpname("${DESKNAME}.panetab3.world",1)`
 viewtype -t perspective ${DESKNAME}.panetab3.world.`vpname("${DESKNAME}.panetab3.world",2)`
-networkeditor -p '{\n	"palettecolors":"",\n	"showspareinputdep":"1",\n	"showchilddep":"1",\n	"showdep":"0",\n	"taskgraphsortdirection":"0",\n	"showtaskgraphperf":"0",\n	"taskgraphperfstatname":"Cook Time",\n	"perfstatname":"Time",\n	"showparmdialogmax":"1",\n	"taskgraphcollapsemode":"Off",\n	"workitemcolorattribute":"",\n	"gridmode":"0",\n	"workitemattrtocollapseby":"",\n	"overviewbounds":"0.000000 0.000000 295.800000 164.700000",\n	"overviewmode":"2",\n	"showmenu":"1",\n	"showperfstats":"1",\n	"grouplistsplit":"0.75",\n	"showgrouplist":"0",\n	"palettemode":"0",\n	"useworkitemcolorattribute":"0",\n	"showtasksmenu":"1",\n	"backgroundimageediting":"0",\n	"backgroundimagebrightness":"1.0",\n	"gridystep":"1.0",\n	"showtree":"0",\n	"palettesize":"150 150",\n	"treesplit":"0.25",\n	"typesidebarsplit":"0.25",\n	"showtypesidebar":"0",\n	"taskgraphsortcriteria":"Automatic",\n	"showparmdialog":"0",\n	"gridxstep":"2.0"\n}\n' panetab4
+networkeditor -p '{\n	"palettecolors":"",\n	"showspareinputdep":"1",\n	"showchilddep":"1",\n	"showdep":"0",\n	"taskgraphsortdirection":"0",\n	"showtaskgraphperf":"0",\n	"taskgraphperfstatname":"Cook Time",\n	"perfstatname":"Time",\n	"showparmdialogmax":"1",\n	"taskgraphcollapsemode":"Off",\n	"workitemcolorattribute":"",\n	"gridmode":"0",\n	"workitemattrtocollapseby":"",\n	"overviewbounds":"0.000000 0.000000 388.800000 164.700000",\n	"overviewmode":"2",\n	"showmenu":"1",\n	"showperfstats":"1",\n	"grouplistsplit":"0.75",\n	"showgrouplist":"0",\n	"palettemode":"0",\n	"useworkitemcolorattribute":"0",\n	"showtasksmenu":"1",\n	"backgroundimageediting":"0",\n	"backgroundimagebrightness":"1.0",\n	"gridystep":"1.0",\n	"showtree":"0",\n	"palettesize":"150 150",\n	"treesplit":"0.25",\n	"typesidebarsplit":"0.25",\n	"showtypesidebar":"0",\n	"taskgraphsortcriteria":"Automatic",\n	"showparmdialog":"0",\n	"gridxstep":"2.0"\n}\n' panetab4
 netcolumns -c display,xray,select,origin,capture,bone -n OBJ panetab4
 netcolumns -c display,render,template,selectabletemplate,highlight,unload,bypass,lock -n SOP panetab4
 netcolumns -c delscript,comment -n CHOPNET panetab4
