@@ -1,7 +1,0 @@
-{
-	"path": "$FLOPS",
-	"load_package_once": true,
-	"env": [
-		{ "FLOPS": "D:/Flora/Git/Houdini20.0" }
-	]
-}
