@@ -1,9 +1,0 @@
-{
-	"path": "$FLOPS",
-	"load_package_once": true,
-	"env": [
-		{ "FLOPS": "D:/Flops" },
-		{ "HOUDINI_VIOLATE_THE_EULA": 1 }
-
-	]
-}
