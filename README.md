@@ -1,2 +1,2 @@
 # FLOPs
-Post-Pegasus repo for continuing development of Flora framework for Houdini
+An open-source repository of Foliage tools for Houdini called **Flora**
