@@ -1,0 +1,7 @@
+{
+
+    "hpath" :  "$PEGAFLOPS",
+    "env" : [
+      { "PEGAFLOPS" : "$HIP/../packages/pegaflops"}
+    ]
+}
